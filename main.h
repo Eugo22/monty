@@ -1,5 +1,17 @@
 #ifndef MAIN_H
 #define MAIN_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define STACK_SIZE 100
+
+
+
+void push(int value, int line_number);
+void pall();
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -20,7 +32,7 @@ typedef struct stack_s
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
  * @f: function to handle the opcode
- *
+ * 
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO
  */
